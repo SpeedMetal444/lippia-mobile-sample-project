@@ -1,8 +1,8 @@
 {
-  "appium:deviceName": "Galaxy S20 FE",
+  "appium:deviceName": "{{deviceName}}",
   "platformName": "Android",
-  "appium:udid": "192.168.0.42:5555",
-  "appium:app": "C://Workspace//mda-2.2.0-25.apk",
+  "appium:udid": "{{udid}}",
+  "appium:app": "{{app}}",
   "appium:resetKeyboard": "true",
   "appium:unicodeKeyboard": "true",
   "appium:automationName": "UiAutomator2"

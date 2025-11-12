@@ -53,13 +53,16 @@
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/s20feCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
                 <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
+
+                <crowdar.deviceName>Galaxy S20 FE</crowdar.deviceName>
                 <crowdar.udid>192.168.0.42:5555</crowdar.udid>
                 <crowdar.appLocation>C://Workspace//lippia.apk</crowdar.appLocation>
-                <crowdar.deviceName>Galaxy S20 FE</crowdar.deviceName>
+
                 <crowdar.platformName>Android</crowdar.platformName>
                 <crowdar.platformVersion>14</crowdar.platformVersion>
             </properties>
         </profile>
+
         <profile>
             <id>StackLocal</id>
             <properties>
