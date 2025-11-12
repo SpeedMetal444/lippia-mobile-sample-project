@@ -32,16 +32,32 @@
 
     <profiles>
         <profile>
-            <id>Local</id>
+            <id>LocalPhoneAPI36.1</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
-                <crowdar.avd>Pixel_3_API_29</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Documentos\\\\Desarrollo\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
-                <crowdar.deviceName>Pixel3</crowdar.deviceName>
+                <crowdar.avd>PhoneAPI36.1</crowdar.avd>
+                <crowdar.appLocation>C://Workspace//lippia.apk</crowdar.appLocation>
+                <crowdar.deviceName>PhoneAPI36.1</crowdar.deviceName>
+            </properties>
+        </profile>
+        <profile>
+            <id>RemoteS20FE</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/s20feCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
+                <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
+                <cucumber.runner>testngSecuencial.xml</cucumber.runner>
+                <crowdar.udid>192.168.0.42:5555</crowdar.udid>
+                <crowdar.appLocation>C://Workspace//lippia.apk</crowdar.appLocation>
+                <crowdar.deviceName>Galaxy S20 FE</crowdar.deviceName>
+                <crowdar.platformName>Android</crowdar.platformName>
+                <crowdar.platformVersion>14</crowdar.platformVersion>
             </properties>
         </profile>
         <profile>
@@ -56,7 +72,7 @@
         <profile>
             <id>Android</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <crowdar.projectType>MOBILE_ANDROID</crowdar.projectType>

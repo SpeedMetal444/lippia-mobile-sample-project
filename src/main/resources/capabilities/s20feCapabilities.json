@@ -1,0 +1,10 @@
+{
+  "platformName": "Android",
+  "appium:automationName": "UiAutomator2",
+  "appium:deviceName": "Galaxy S20 FE",
+  "appium:udid": "192.168.0.42:5555",
+  "appium:app": "C://Workspace//lippia.apk",
+  "appium:resetKeyboard": true,
+  "appium:unicodeKeyboard": true
+}
+
