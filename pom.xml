@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>dd-MM-yyyy-HH-mm-ss</maven.build.timestamp.format>
         <buildIdentifier>lippia_mobile_sample_project_${maven.build.timestamp}</buildIdentifier>
-        <crowdar.cucumber.filter>@Demo</crowdar.cucumber.filter>
+        <crowdar.cucumber.filter>@SauceDemo</crowdar.cucumber.filter>
         <crowdar.driverHub></crowdar.driverHub>
         <crowdar.cucumber.plugins>--plugin pretty --plugin com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter: --plugin com.crowdar.examples.listeners.CucumberListener:</crowdar.cucumber.plugins>
         <test-manager-plugin>--plugin com.crowdar.examples.report.TestManager:</test-manager-plugin>
@@ -56,7 +56,7 @@
 
                 <crowdar.deviceName>Galaxy S20 FE</crowdar.deviceName>
                 <crowdar.udid>192.168.0.42:5555</crowdar.udid>
-                <crowdar.appLocation>C://Workspace//lippia.apk</crowdar.appLocation>
+                <crowdar.appLocation>C:////Workspace////lippia.apk</crowdar.appLocation>
 
                 <crowdar.platformName>Android</crowdar.platformName>
                 <crowdar.platformVersion>14</crowdar.platformVersion>
@@ -176,11 +176,10 @@
     </build>
 
     <repositories>
-		<repository>
-			<id>crowdarRepo</id>
-			<name>crowdar-repository</name>
-			<url>https://nexus-v3-repositories.automation.crowdaronline.com/repository/maven-public/</url>
-		</repository>
-	</repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
 
 </project>
