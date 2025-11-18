@@ -10,8 +10,8 @@ public class SauceDemoHomeService {
         MobileActionManager.waitVisibility(SauceDemoHomeConstants.HOME_TITLE);
     }
 
-    public static void scrollToProduct(String title) {
-        Utils.scrollAndroid("text", title, 0);
+    public static void scrollToProduct(String productName) {
+        Utils.scrollAndroid(productName);
     }
 
     public static void validateProductTitleVisible(String title) {

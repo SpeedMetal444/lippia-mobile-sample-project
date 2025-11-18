@@ -7,5 +7,5 @@ Feature: Find a product in the SauceDemo main screen
   @FindAProduct
   Scenario: The client finds a product in the main screen
     Given The SauceDemo app is loaded correctly
-    When The client scrolls down to find the product "Sauce Labs Backpack"
-    Then The client can see the "Sauce Labs Backpack" title
+    When The client scrolls down to find the product "Test.allTheThings() T-Shirt (purple)"
+    Then The client can see the "Test.allTheThings() T-Shirt (purple)" title

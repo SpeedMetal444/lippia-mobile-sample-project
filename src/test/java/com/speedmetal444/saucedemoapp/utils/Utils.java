@@ -6,10 +6,17 @@ import org.openqa.selenium.WebElement;
 
 public class Utils {
 
-    public static WebElement scrollAndroid(String locatorType, String locatorValue, int index) {
-        String locator = String.format("new UiScrollable(new UiSelector().scrollable(true).instance(3)).scrollIntoView(new UiSelector().%s(\"%s\").instance(0).index(%d))", locatorType, locatorValue, index);
-        return DriverManager.getDriverInstance().findElement(MobileBy.AndroidUIAutomator(locator));
+    public static WebElement scrollAndroid(String text) {
+        String uiSelector = String.format(
+                "new UiScrollable(new UiSelector().scrollable(true))" +
+                        ".scrollIntoView(new UiSelector().text(\"%s\"))",
+                text
+        );
+
+        return DriverManager.getDriverInstance()
+                .findElement(MobileBy.AndroidUIAutomator(uiSelector));
     }
+
 
     public static String desencriptarEnv(String key) {
         String value = System.getenv(key);
