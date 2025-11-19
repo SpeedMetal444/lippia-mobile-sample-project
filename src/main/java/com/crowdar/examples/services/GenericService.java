@@ -1,3 +1,5 @@
+import org.openqa.selenium.WebElement;
+
 //package com.crowdar.examples.services;
 //
 //import com.crowdar.driver.DriverManager;

@@ -6,7 +6,7 @@ import com.speedmetal444.saucedemoapp.utils.Utils;
 import org.testng.Assert;
 
 public class SauceDemoHomeService {
-    public static void isViewLoaded() {
+    public static void isHomeViewLoaded() {
         MobileActionManager.waitVisibility(SauceDemoHomeConstants.HOME_TITLE);
     }
 
@@ -18,5 +18,9 @@ public class SauceDemoHomeService {
         String locator = String.format(SauceDemoHomeConstants.PRODUCT_TITLE, title);
         MobileActionManager.waitVisibility(locator);
         Assert.assertTrue(MobileActionManager.isVisible(locator));
+    }
+
+    public static void clickProduct(String product) {
+        MobileActionManager.click(SauceDemoHomeConstants.PRODUCT_BUTTON_BY_TITLE, product);
     }
 }
