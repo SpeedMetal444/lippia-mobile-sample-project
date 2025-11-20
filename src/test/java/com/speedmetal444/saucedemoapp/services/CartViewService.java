@@ -22,5 +22,4 @@ public class CartViewService {
     public static void clickProceedToCheckout() {
         MobileActionManager.click(CartViewConstants.CHECKOUT_BUTTON);
     }
-
 }

@@ -1,5 +1,6 @@
 package com.speedmetal444.saucedemoapp.utils;
 
+import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.driver.DriverManager;
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.WebElement;
@@ -17,7 +18,6 @@ public class Utils {
                 .findElement(MobileBy.AndroidUIAutomator(uiSelector));
     }
 
-
     public static String desencriptarEnv(String key) {
         String value = System.getenv(key);
         if (value == null) {
@@ -26,4 +26,13 @@ public class Utils {
         return value;
     }
 
+    public static void fillWithHint(String locator) {
+        String hint = MobileActionManager.getAttribute(locator, "hint");
+        MobileActionManager.setInput(locator, hint);
+    }
+
+    public static void fillWithText(String sourceLocator, String targetLocator) {
+        String text = MobileActionManager.getAttribute(sourceLocator, "text");
+        MobileActionManager.setInput(targetLocator, text);
+    }
 }

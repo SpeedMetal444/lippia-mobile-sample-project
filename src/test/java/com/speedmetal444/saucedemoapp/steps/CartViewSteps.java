@@ -20,4 +20,9 @@ public class CartViewSteps {
     public void theMessageOfShouldBeVisibleOnTheTopCenter() {
         CartViewService.isNoItemDisplayed();
     }
+
+    @When("The client taps on the Proceed to checkout button")
+    public void theClientTapsOnTheProceedToCheckoutButton() {
+        CartViewService.clickProceedToCheckout();
+    }
 }

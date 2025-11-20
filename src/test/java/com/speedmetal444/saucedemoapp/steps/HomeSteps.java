@@ -26,4 +26,10 @@ public class HomeSteps {
     public void theClientTapsOnTheImage(String product) {
         HomeService.clickProduct(product);
     }
+
+    @When("The client scrolls down until the product {string} is visible and taps on its image")
+    public void theClientScrollsDownUntilTheProductIsVisibleAndTapsOnItsImage(String product) {
+        HomeService.scrollToProduct(product);
+        HomeService.clickProduct(product);
+    }
 }
