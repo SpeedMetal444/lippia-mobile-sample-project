@@ -11,6 +11,7 @@ Feature: Add and remove a product on the SauceDemo app
   Scenario: The client finds a product in the main screen and adds it to the cart
     When The client scrolls down until the product "Sauce Labs Backpack (violet)" is visible and taps on its image
     Then The client should be on the product detail screen
+
     When The client taps on the + button
     And The client taps the Add to cart button
     Then The cart badge count should be visible on the top right with 2 item
@@ -19,8 +20,10 @@ Feature: Add and remove a product on the SauceDemo app
   Scenario: The client finds a product in the main screen, adds it and then removes it from cart
     When The client scrolls down until the product "Sauce Labs Backpack (orange)" is visible and taps on its image
     Then The client should be on the product detail screen
+
     When The client taps the Add to cart button
     And The client taps on the cart badge
     Then The client should be on the cart detail screen
+
     When The client taps on the Remove item link
     Then The message of No items should be visible on the top center
