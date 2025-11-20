@@ -1,8 +1,6 @@
 package com.speedmetal444.saucedemoapp.steps;
 
 import com.speedmetal444.saucedemoapp.services.SauceDemoProductViewService;
-import cucumber.api.PendingException;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -25,6 +23,11 @@ public class SauceDemoProductViewSteps {
 
     @When("The client taps on the + button")
     public void theClientTapsOnTheButton() {
-        SauceDemoProductViewService.clickAddItem();
+        SauceDemoProductViewService.clickIncreaseItem();
+    }
+
+    @When("The client taps on the cart badge")
+    public void theClientTapsOnTheCartButton() {
+        SauceDemoProductViewService.clickCart();
     }
 }

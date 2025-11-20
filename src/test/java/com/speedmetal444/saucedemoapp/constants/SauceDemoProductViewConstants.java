@@ -9,4 +9,5 @@ public class SauceDemoProductViewConstants {
     public static final String BLUE_COLOR_SELECT = "ACCESSIBILITY_ID:Blue color";
     public static final String INCREASE_QUANTITY_BUTTON = "ACCESSIBILITY_ID:Increase item quantity";
     public static final String DECREASE_QUANTITY_BUTTON = "ACCESSIBILITY_ID:Decrease item quantity";
+    public static final String CART_BUTTON = "ID:com.saucelabs.mydemoapp.android:id/cartTV";
 }

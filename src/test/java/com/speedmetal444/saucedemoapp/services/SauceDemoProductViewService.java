@@ -18,7 +18,15 @@ public class SauceDemoProductViewService {
                 Assert.assertEquals(actualQuantity, quantity);
     }
 
-    public static void clickAddItem() {
+    public static void clickIncreaseItem() {
         MobileActionManager.click(SauceDemoProductViewConstants.INCREASE_QUANTITY_BUTTON);
+    }
+
+    public static void clickDecreaseItem() {
+        MobileActionManager.click(SauceDemoProductViewConstants.DECREASE_QUANTITY_BUTTON);
+    }
+
+    public static void clickCart() {
+        MobileActionManager.click(SauceDemoProductViewConstants.CART_BUTTON);
     }
 }
