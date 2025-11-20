@@ -1,6 +1,6 @@
 package com.speedmetal444.saucedemoapp.constants;
 
-public class SauceDemoPaymentFormViewConstants {
+public class PaymentFormViewConstants {
 
     public static final String INPUT_FULL_NAME_PAY = "ID:com.saucelabs.mydemoapp.android:id/nameET";
     public static final String INPUT_CARD_NUMBER = "ID:com.saucelabs.mydemoapp.android:id/cardNumberET";

@@ -1,6 +1,6 @@
 package com.speedmetal444.saucedemoapp.constants;
 
-public class SauceDemoShippingFormViewConstants {
+public class ShippingFormViewConstants {
 
     public static final String INPUT_FULL_NAME = "ID:com.saucelabs.mydemoapp.android:id/fullNameET";
     public static final String INPUT_ADDRESS_REQUIRED = "ID:com.saucelabs.mydemoapp.android:id/address1ET";

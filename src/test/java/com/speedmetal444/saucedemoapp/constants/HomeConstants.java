@@ -1,6 +1,6 @@
 package com.speedmetal444.saucedemoapp.constants;
 
-public class SauceDemoHomeConstants {
+public class HomeConstants {
 
     public static final String HOME_TITLE = "ACCESSIBILITY_ID:title";
     public static final String BACKPACK_PRODUCT_TEXT = "xpath://android.widget.TextView[@content-desc=\"Product Title\" and @text=\"Sauce Labs Backpack\"]";

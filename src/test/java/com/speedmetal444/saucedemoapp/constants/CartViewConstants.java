@@ -1,6 +1,6 @@
 package com.speedmetal444.saucedemoapp.constants;
 
-public class SauceDemoCartViewConstants {
+public class CartViewConstants {
 
     public static final String MY_CART_TITLE = "ID:com.saucelabs.mydemoapp.android:id/productTV";
     public static final String NO_ITEMS_TITLE = "ID:com.saucelabs.mydemoapp.android:id/noItemTitleTV";

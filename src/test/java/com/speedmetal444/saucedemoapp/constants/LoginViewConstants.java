@@ -1,6 +1,6 @@
 package com.speedmetal444.saucedemoapp.constants;
 
-public class SauceDemoLoginViewConstants {
+public class LoginViewConstants {
 
     public static final String INPUT_USER = "ID:com.saucelabs.mydemoapp.android:id/nameET";
     public static final String INPUT_PASSWORD = "ID:com.saucelabs.mydemoapp.android:id/passwordET";
