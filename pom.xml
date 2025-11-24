@@ -62,7 +62,7 @@
                 <crowdar.platformVersion>14</crowdar.platformVersion>
             </properties>
         </profile>
-//Test
+
         <profile>
             <id>StackLocal</id>
             <properties>
