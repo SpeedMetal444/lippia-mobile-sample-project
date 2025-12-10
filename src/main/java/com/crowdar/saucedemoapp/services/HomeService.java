@@ -2,7 +2,6 @@ package com.crowdar.saucedemoapp.services;
 
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.saucedemoapp.constants.HomeConstants;
-import com.crowdar.saucedemoapp.utils.Utils;
 import org.testng.Assert;
 
 public class HomeService {
@@ -11,7 +10,7 @@ public class HomeService {
     }
 
     public static void scrollToProduct(String productName) {
-        Utils.scrollAndroid(productName);
+        UtilsService.scrollAndroid(productName);
     }
 
     public static void validateProductTitleVisible(String title) {

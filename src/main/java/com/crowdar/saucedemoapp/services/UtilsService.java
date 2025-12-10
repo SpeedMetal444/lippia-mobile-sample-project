@@ -1,11 +1,11 @@
-package com.crowdar.saucedemoapp.utils;
+package com.crowdar.saucedemoapp.services;
 
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.driver.DriverManager;
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.WebElement;
 
-public class Utils {
+public class UtilsService {
 
     public static WebElement scrollAndroid(String text) {
         String uiSelector = String.format(

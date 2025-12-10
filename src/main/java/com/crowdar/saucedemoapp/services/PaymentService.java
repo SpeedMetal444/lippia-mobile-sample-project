@@ -3,7 +3,7 @@ package com.crowdar.saucedemoapp.services;
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.saucedemoapp.constants.PaymentFormViewConstants;
 
-import static com.crowdar.saucedemoapp.utils.Utils.fillWithHint;
+import static com.crowdar.saucedemoapp.services.UtilsService.fillWithHint;
 
 public class PaymentService {
 

@@ -3,7 +3,7 @@ package com.crowdar.saucedemoapp.services;
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.saucedemoapp.constants.LoginViewConstants;
 
-import static com.crowdar.saucedemoapp.utils.Utils.fillWithText;
+import static com.crowdar.saucedemoapp.services.UtilsService.fillWithText;
 
 public class LoginService {
 
