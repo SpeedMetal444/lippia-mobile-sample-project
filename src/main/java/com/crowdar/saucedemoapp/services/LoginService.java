@@ -1,9 +1,9 @@
-package com.speedmetal444.saucedemoapp.services;
+package com.crowdar.saucedemoapp.services;
 
 import com.crowdar.core.actions.MobileActionManager;
-import com.speedmetal444.saucedemoapp.constants.LoginViewConstants;
+import com.crowdar.saucedemoapp.constants.LoginViewConstants;
 
-import static com.speedmetal444.saucedemoapp.utils.Utils.fillWithText;
+import static com.crowdar.saucedemoapp.utils.Utils.fillWithText;
 
 public class LoginService {
 

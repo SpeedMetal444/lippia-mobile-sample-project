@@ -1,4 +1,4 @@
-package com.speedmetal444.saucedemoapp.constants;
+package com.crowdar.saucedemoapp.constants;
 
 public class HomeConstants {
 

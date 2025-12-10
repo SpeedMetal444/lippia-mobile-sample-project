@@ -1,4 +1,4 @@
-package com.speedmetal444.saucedemoapp.utils;
+package com.crowdar.saucedemoapp.utils;
 
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.driver.DriverManager;

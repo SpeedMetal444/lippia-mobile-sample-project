@@ -1,6 +1,6 @@
-package com.speedmetal444.saucedemoapp.steps;
+package com.crowdar.saucedemoapp.steps;
 
-import com.speedmetal444.saucedemoapp.services.ProductViewService;
+import com.crowdar.saucedemoapp.services.ProductViewService;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 

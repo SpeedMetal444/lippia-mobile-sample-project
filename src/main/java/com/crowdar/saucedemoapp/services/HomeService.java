@@ -1,8 +1,8 @@
-package com.speedmetal444.saucedemoapp.services;
+package com.crowdar.saucedemoapp.services;
 
 import com.crowdar.core.actions.MobileActionManager;
-import com.speedmetal444.saucedemoapp.constants.HomeConstants;
-import com.speedmetal444.saucedemoapp.utils.Utils;
+import com.crowdar.saucedemoapp.constants.HomeConstants;
+import com.crowdar.saucedemoapp.utils.Utils;
 import org.testng.Assert;
 
 public class HomeService {

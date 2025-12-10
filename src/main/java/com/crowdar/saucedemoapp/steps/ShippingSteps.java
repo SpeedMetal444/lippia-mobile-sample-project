@@ -1,7 +1,6 @@
-package com.speedmetal444.saucedemoapp.steps;
+package com.crowdar.saucedemoapp.steps;
 
-import com.speedmetal444.saucedemoapp.services.ShippingService;
-import cucumber.api.PendingException;
+import com.crowdar.saucedemoapp.services.ShippingService;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

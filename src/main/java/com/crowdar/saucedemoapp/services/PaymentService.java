@@ -1,9 +1,9 @@
-package com.speedmetal444.saucedemoapp.services;
+package com.crowdar.saucedemoapp.services;
 
 import com.crowdar.core.actions.MobileActionManager;
-import com.speedmetal444.saucedemoapp.constants.PaymentFormViewConstants;
+import com.crowdar.saucedemoapp.constants.PaymentFormViewConstants;
 
-import static com.speedmetal444.saucedemoapp.utils.Utils.fillWithHint;
+import static com.crowdar.saucedemoapp.utils.Utils.fillWithHint;
 
 public class PaymentService {
 

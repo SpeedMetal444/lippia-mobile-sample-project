@@ -1,7 +1,7 @@
-package com.speedmetal444.saucedemoapp.services;
+package com.crowdar.saucedemoapp.services;
 
 import com.crowdar.core.actions.MobileActionManager;
-import com.speedmetal444.saucedemoapp.constants.ReviewOrderViewConstants;
+import com.crowdar.saucedemoapp.constants.ReviewOrderViewConstants;
 
 public class ReviewOrderService {
 
