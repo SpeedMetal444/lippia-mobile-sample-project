@@ -1,29 +1,23 @@
 @SauceDemo
-Feature: Add and remove a product on the SauceDemo app
+Feature: Add and remove products in the SauceDemo app
   As a potential client
-  I want to interact with the cart
-  So that I can add or remove items
+  I want to manage items in the cart
+  So that I can add or remove products
 
   Background:
     Given The SauceDemo app is loaded correctly
 
   @AddAProductToCart
-  Scenario: The client finds a product in the main screen and adds it to the cart
-    When The client scrolls down until the product "Sauce Labs Backpack (violet)" is visible and taps on its image
-    Then The client should be on the product detail screen
+  Scenario: The client selects a product and adds it to the cart
+    When The client selects the product "Sauce Labs Backpack (violet)"
+    And The client adds the product to the cart
+    Then The cart badge count should show "2"
 
-    When The client taps on the + button
-    And The client taps the Add to cart button
-    Then The cart badge count should be visible on the top right with 2 item
 
   @AddAndRemoveAnItem
-  Scenario: The client finds a product in the main screen, adds it and then removes it from cart
-    When The client scrolls down until the product "Sauce Labs Backpack (orange)" is visible and taps on its image
-    Then The client should be on the product detail screen
-
-    When The client taps the Add to cart button
-    And The client taps on the cart badge
-    Then The client should be on the cart detail screen
-
-    When The client taps on the Remove item link
-    Then The message of No items should be visible on the top center
+  Scenario: The client selects a product, adds it to the cart and removes it
+    When The client selects the product "Sauce Labs Backpack (orange)"
+    And The client adds the product to the cart
+    And The client proceeds to the cart
+    And The client removes the product from the cart
+    Then The client should see a message indicating that there are no items in the cart

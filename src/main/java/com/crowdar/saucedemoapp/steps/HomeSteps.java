@@ -1,6 +1,7 @@
 package com.crowdar.saucedemoapp.steps;
 
 import com.crowdar.saucedemoapp.services.HomeService;
+import cucumber.api.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,24 +13,19 @@ public class HomeSteps {
         HomeService.isHomeViewLoaded();
     }
 
+    @When("The client selects the product {string}")
+    public void theClientSelectsTheProduct(String product) {
+        HomeService.scrollToProduct(product);
+        HomeService.clickProduct(product);
+    }
+
     @When("The client scrolls down until the product {string} is visible")
-    public void theClientScrollsDownToFindTheProduct(String productTitle) {
-        HomeService.scrollToProduct(productTitle);
+    public void theClientScrollsDownUntilTheProductIsVisible(String product) {
+        HomeService.scrollToProduct(product);;
     }
 
     @Then("The client can see the {string} title")
-    public void theClientCanSeeTheProductTitle(String title) {
-        HomeService.validateProductTitleVisible(title);
-    }
-
-    @And("The client taps on the {string} image")
-    public void theClientTapsOnTheImage(String product) {
-        HomeService.clickProduct(product);
-    }
-
-    @When("The client scrolls down until the product {string} is visible and taps on its image")
-    public void theClientScrollsDownUntilTheProductIsVisibleAndTapsOnItsImage(String product) {
-        HomeService.scrollToProduct(product);
-        HomeService.clickProduct(product);
+    public void theClientCanSeeTheTitle(String product) {
+        HomeService.validateProductTitleVisible(product);
     }
 }

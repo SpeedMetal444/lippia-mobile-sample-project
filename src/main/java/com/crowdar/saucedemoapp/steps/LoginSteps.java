@@ -1,24 +1,17 @@
 package com.crowdar.saucedemoapp.steps;
 
 import com.crowdar.saucedemoapp.services.LoginService;
+import cucumber.api.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginSteps {
 
-    @Then("The client should be on the login screen")
-    public void theClientShouldBeOnTheLoginScreen() {
+    @And("The client logs in with the default credentials")
+    public void theClientLogsInWithTheDefaultCredentials() {
         LoginService.isLoginVisible();
-    }
-
-    @When("The client fills the form with the login default values")
-    public void theClientFillsTheFormWithTheLoginDefaultValues() {
         LoginService.fillFormDefault();
-    }
-
-    @And("The client taps on the Login button")
-    public void theClientTapsOnTheLoginButton() {
         LoginService.clickLogin();
     }
 }

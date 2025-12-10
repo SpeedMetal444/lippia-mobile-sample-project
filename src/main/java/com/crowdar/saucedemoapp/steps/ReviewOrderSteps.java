@@ -1,18 +1,16 @@
 package com.crowdar.saucedemoapp.steps;
 
 import com.crowdar.saucedemoapp.services.ReviewOrderService;
+import cucumber.api.PendingException;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class ReviewOrderSteps {
 
-    @Then("The client should be on the Checkout review screen")
-    public void theClientShouldBeOnTheCheckoutReviewScreen() {
+    @And("The client reviews and confirms the order")
+    public void theClientReviewsAndConfirmsTheOrder() {
         ReviewOrderService.isReviewVisible();
-    }
-
-    @When("The client taps on the Place order button")
-    public void theClientTapsOnThePlaceOrderButton() {
         ReviewOrderService.clickPlaceOrder();
     }
 }
