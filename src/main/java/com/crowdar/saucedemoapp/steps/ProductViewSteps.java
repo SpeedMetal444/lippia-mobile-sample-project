@@ -19,7 +19,7 @@ public class ProductViewSteps {
 
     @And("The user adds the product to the cart")
     public void theClientAddsTheProductToTheCart() {
-        ProductViewService.isProductViewLoaded();
+        ProductViewService.isProductViewVisible();
         ProductViewService.clickAddToCart();
         ProductViewService.clickCart();
     }

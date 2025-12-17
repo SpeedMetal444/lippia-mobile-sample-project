@@ -38,3 +38,16 @@ Feature: Full order workflow in the SauceDemo app
       | Sauce Labs Backpack (red)    |
       | Sauce Labs Bike Light        |
       | Sauce Labs Onesie            |
+
+  @MakeAnOrderAndRateATheProduct
+  Scenario Outline: The user makes an order and rates a product
+    When The user makes a "<product>" order and continues shopping
+    And The user selects the product "<product>"
+    And The user rates the product with <stars> stars
+    Then The user should see a thanks for rating message
+
+    Examples:
+      | product                      | stars |
+      | Sauce Labs Backpack          | 4     |
+      | Sauce Labs Backpack (green)  | 2     |
+      | Sauce Labs Backpack (violet) | 5     |

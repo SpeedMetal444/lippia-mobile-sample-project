@@ -10,4 +10,8 @@ public class FinishedOrderService {
         MobileActionManager.waitVisibility(FinishedOrderViewConstants.CHECKOUT_COMPLETE_MESSAGE);
         Assert.assertTrue(MobileActionManager.isVisible(FinishedOrderViewConstants.THANKS_MESSAGE));
     }
+
+    public static void clickContinueShopping() {
+        MobileActionManager.click(FinishedOrderViewConstants.CONTINUE_SHOPPING_BUTTON);
+    }
 }

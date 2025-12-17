@@ -5,7 +5,7 @@ import com.crowdar.saucedemoapp.constants.ProductViewConstants;
 import junit.framework.Assert;
 
 public class ProductViewService {
-    public static void isProductViewLoaded() {
+    public static void isProductViewVisible() {
         MobileActionManager.waitVisibility(ProductViewConstants.PRODUCT_VIEW);
     }
 
