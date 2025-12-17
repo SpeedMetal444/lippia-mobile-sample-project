@@ -14,8 +14,8 @@ Feature: Add and remove products in the SauceDemo app
     Then The cart badge count should show 1
 
   @AddAProductToCartTwice
-  Scenario: The user selects a product and adds it to the cart
-    When The user selects the product "Sauce Labs Backpack (violet)"
+  Scenario: The user selects a product and adds two items of it to the cart
+    When The user selects the product "Sauce Labs Backpack (red)"
     And The user clicks the + button
     And The user adds the product to the cart
     Then The cart badge count should show 2
@@ -27,3 +27,10 @@ Feature: Add and remove products in the SauceDemo app
     And The user proceeds to the cart
     And The user removes the product from the cart
     Then The user should see a message indicating that there are no items in the cart
+
+  @IncreaseItemQuantity
+  Scenario: The user selects a product and adds N items of it to the cart
+    When The user selects the product "Sauce Labs Backpack (yellow)"
+    And The user adds the product to the cart
+    And The user clicks the + button 3 times
+    Then The cart badge count should show 4

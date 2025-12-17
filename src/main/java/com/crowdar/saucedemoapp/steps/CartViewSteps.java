@@ -1,7 +1,7 @@
 package com.crowdar.saucedemoapp.steps;
 
 import com.crowdar.saucedemoapp.services.CartViewService;
-import cucumber.api.PendingException;
+import com.crowdar.saucedemoapp.services.ProductViewService;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -32,5 +32,12 @@ public class CartViewSteps {
     @Then("The user should see a message indicating that there are no items in the cart")
     public void theClientShouldSeeAMessageIndicatingThatThereAreNoItemsInTheCart() {
         CartViewService.isNoItemDisplayed();
+    }
+
+    @And("The user clicks the + button {int} times")
+    public void theUserClicksTheButtonTimes(int times) {
+        for (int i = 0; i < times; i++) {
+            ProductViewService.clickIncreaseItem();
+        }
     }
 }
