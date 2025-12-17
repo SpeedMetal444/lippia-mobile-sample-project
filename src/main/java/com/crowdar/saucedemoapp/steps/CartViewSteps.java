@@ -36,8 +36,6 @@ public class CartViewSteps {
 
     @And("The user clicks the + button {int} times")
     public void theUserClicksTheButtonTimes(int times) {
-        for (int i = 0; i < times; i++) {
-            ProductViewService.clickIncreaseItem();
-        }
+        ProductViewService.clickIncreaseItemNTimes(times);
     }
 }

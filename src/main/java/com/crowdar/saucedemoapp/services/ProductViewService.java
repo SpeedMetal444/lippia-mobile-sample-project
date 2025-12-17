@@ -23,11 +23,30 @@ public class ProductViewService {
         MobileActionManager.click(ProductViewConstants.INCREASE_QUANTITY_BUTTON);
     }
 
+    public static void clickIncreaseItemNTimes(int times) {
+        for (int i = 0; i < times; i++) {
+            ProductViewService.clickIncreaseItem();
+        }
+    }
+
     public static void clickDecreaseItem() {
         MobileActionManager.click(ProductViewConstants.DECREASE_QUANTITY_BUTTON);
     }
 
     public static void clickCart() {
         MobileActionManager.click(ProductViewConstants.CART_BUTTON);
+    }
+
+    public static void selectRating(int star) {
+        if (star < 1 || star > 5) {
+            throw new IllegalArgumentException("Star rating must be between 1 and 5");
+        }
+
+        String locator = String.format(ProductViewConstants.ITEM_RATING, star);
+        MobileActionManager.click(locator);
+    }
+
+    public static void isRatingThanksMessageVisible() {
+        MobileActionManager.isVisible(ProductViewConstants.RATING_THANKS_MESSAGE);
     }
 }

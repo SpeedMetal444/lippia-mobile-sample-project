@@ -34,3 +34,9 @@ Feature: Add and remove products in the SauceDemo app
     And The user adds the product to the cart
     And The user clicks the + button 3 times
     Then The cart badge count should show 4
+
+  @RatingAProduct
+  Scenario: The user selects a product and gives it N stars
+    When The user selects the product "Sauce Labs Backpack (red)"
+    And The user rates the product with 1 stars
+    Then The user should see a thanks for rating message

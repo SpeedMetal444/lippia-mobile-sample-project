@@ -1,7 +1,6 @@
 package com.crowdar.saucedemoapp.steps;
 
 import com.crowdar.saucedemoapp.services.ShippingService;
-import cucumber.api.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 

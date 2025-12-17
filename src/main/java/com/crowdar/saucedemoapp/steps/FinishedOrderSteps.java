@@ -1,7 +1,6 @@
 package com.crowdar.saucedemoapp.steps;
 
 import com.crowdar.saucedemoapp.services.FinishedOrderService;
-import cucumber.api.PendingException;
 import io.cucumber.java.en.Then;
 
 public class FinishedOrderSteps {
