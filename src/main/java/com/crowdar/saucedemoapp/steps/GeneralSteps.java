@@ -1,10 +1,9 @@
 package com.crowdar.saucedemoapp.steps;
 
-import com.crowdar.saucedemoapp.constants.LoginViewConstants;
 import com.crowdar.saucedemoapp.services.*;
 import io.cucumber.java.en.Given;
 
-public class PostOrderSteps {
+public class GeneralSteps {
     @Given("The user makes a {string} order and continues shopping")
     public void theUserContinuesShopping(String product) {
         HomeService.scrollToProduct(product);
