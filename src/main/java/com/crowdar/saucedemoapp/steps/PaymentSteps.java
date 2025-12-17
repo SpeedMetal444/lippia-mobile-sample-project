@@ -14,8 +14,14 @@ public class PaymentSteps {
         PaymentService.clickReviewOrder();
     }
 
-    @Then("The user should be payment form screen")
+    @Then("The user should be on the payment form screen")
     public void theUserShouldBePaymentFormScreen() {
         PaymentService.isPaymentVisible();
+    }
+
+    @And("The user completes the payment form with {string} full name, {string} card number, {string} expiration date and {string} security code")
+    public void theUserCompletesThePaymentFormWithFullNameCardNumberExpirationDateAndSecurityCode(String fullname, String card, String expdate, String code) {
+        PaymentService.fillForm(fullname, card, expdate, code);
+        PaymentService.clickReviewOrder();
     }
 }
