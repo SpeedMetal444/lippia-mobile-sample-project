@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 public class CartViewSteps {
 
-    @When("The client taps on the Remove item link")
+    @When("The user taps on the Remove item link")
     public void theClientTapsOnTheRemoveItemLink() {
         CartViewService.clickRemove();
     }
@@ -18,18 +18,18 @@ public class CartViewSteps {
         CartViewService.isNoItemDisplayed();
     }
 
-    @And("The client proceeds to checkout")
+    @And("The user proceeds to checkout")
     public void theClientProceedsToCheckout() {
         CartViewService.isCartViewLoaded();
         CartViewService.clickProceedToCheckout();
     }
 
-    @And("The client removes the product from the cart")
+    @And("The user removes the product from the cart")
     public void theClientRemovesTheProductFromTheCart() {
         CartViewService.clickRemove();
     }
 
-    @Then("The client should see a message indicating that there are no items in the cart")
+    @Then("The user should see a message indicating that there are no items in the cart")
     public void theClientShouldSeeAMessageIndicatingThatThereAreNoItemsInTheCart() {
         CartViewService.isNoItemDisplayed();
     }

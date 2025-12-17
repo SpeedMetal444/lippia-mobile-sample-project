@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 
 public class FinishedOrderSteps {
 
-    @Then("The client should see the order confirmation message")
+    @Then("The user should see the order confirmation message")
     public void theClientShouldSeeTheOrderConfirmationMessage() {
         FinishedOrderService.isFinishedOrderVisible();
     }

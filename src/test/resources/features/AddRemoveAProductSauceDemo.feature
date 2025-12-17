@@ -8,16 +8,22 @@ Feature: Add and remove products in the SauceDemo app
     Given The SauceDemo app is loaded correctly
 
   @AddAProductToCart
-  Scenario: The client selects a product and adds it to the cart
-    When The client selects the product "Sauce Labs Backpack (violet)"
-    And The client adds the product to the cart
+  Scenario: The user selects a product and adds it to the cart
+    When The user selects the product "Sauce Labs Backpack (violet)"
+    And The user adds the product to the cart
+    Then The cart badge count should show "1"
+
+  @AddAProductToCartTwice
+  Scenario: The user selects a product and adds it to the cart
+    When The user selects the product "Sauce Labs Backpack (violet)"
+    And The user adds the product to the cart
+    And The user clicks the + button
     Then The cart badge count should show "2"
 
-
   @AddAndRemoveAnItem
-  Scenario: The client selects a product, adds it to the cart and removes it
-    When The client selects the product "Sauce Labs Backpack (orange)"
-    And The client adds the product to the cart
-    And The client proceeds to the cart
-    And The client removes the product from the cart
-    Then The client should see a message indicating that there are no items in the cart
+  Scenario: The user selects a product, adds it to the cart and removes it
+    When The user selects the product "Sauce Labs Backpack (orange)"
+    And The user adds the product to the cart
+    And The user proceeds to the cart
+    And The user removes the product from the cart
+    Then The user should see a message indicating that there are no items in the cart

@@ -13,12 +13,12 @@ public class ProductViewSteps {
         ProductViewService.isCartBadgeCountVisible(quantity);
     }
 
-    @When("The client taps on the + button")
+    @When("The user taps on the + button")
     public void theClientTapsOnTheButton() {
         ProductViewService.clickIncreaseItem();
     }
 
-    @And("The client adds the product to the cart")
+    @And("The user adds the product to the cart")
     public void theClientAddsTheProductToTheCart() {
         ProductViewService.isProductViewLoaded();
         ProductViewService.clickAddToCart();
@@ -30,8 +30,13 @@ public class ProductViewSteps {
         ProductViewService.isCartBadgeCountVisible(quantity);
     }
 
-    @And("The client proceeds to the cart")
+    @And("The user proceeds to the cart")
     public void theClientProceedsToTheCart() {
         ProductViewService.clickCart();
+    }
+
+    @And("The user clicks the + button")
+    public void theUserClicksTheButton() {
+        ProductViewService.clickIncreaseItem();
     }
 }

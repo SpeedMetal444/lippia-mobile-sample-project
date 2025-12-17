@@ -8,28 +8,28 @@ Feature: Full order workflow in the SauceDemo app
     Given The SauceDemo app is loaded correctly
 
   @MakeAnOrder
-  Scenario: The client completes an order successfully
-    When The client selects the product "Sauce Labs Backpack (red)"
-    And The client adds the product to the cart
-    And The client proceeds to checkout
-    And The client logs in with the default credentials
-    And The client completes the shipping form with default values
-    And The client completes the payment form with default values
-    And The client reviews and confirms the order
-    Then The client should see the order confirmation message
+  Scenario: The user completes an order successfully
+    When The user selects the product "Sauce Labs Backpack (red)"
+    And The user adds the product to the cart
+    And The user proceeds to checkout
+    And The user logs in with the default credentials
+    And The user completes the shipping form with default values
+    And The user completes the payment form with default values
+    And The user reviews and confirms the order
+    Then The user should see the order confirmation message
 
 
   @MakeAnOrderOutline
-  Scenario Outline: The client finds a product, logs in, fills the forms and make an order
+  Scenario Outline: The user finds a product, logs in, fills the forms and make an order
 
-    When The client selects the product "<product>"
-    And The client adds the product to the cart
-    And The client proceeds to checkout
-    And The client logs in with the default credentials
-    And The client completes the shipping form with default values
-    And The client completes the payment form with default values
-    And The client reviews and confirms the order
-    Then The client should see the order confirmation message
+    When The user selects the product "<product>"
+    And The user adds the product to the cart
+    And The user proceeds to checkout
+    And The user logs in with the default credentials
+    And The user completes the shipping form with default values
+    And The user completes the payment form with default values
+    And The user reviews and confirms the order
+    Then The user should see the order confirmation message
 
     Examples:
       | product                      |
