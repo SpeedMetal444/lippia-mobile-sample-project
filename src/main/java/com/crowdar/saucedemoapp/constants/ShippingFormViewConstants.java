@@ -8,5 +8,4 @@ public class ShippingFormViewConstants {
     public static final String INPUT_ZIPCODE = "ID:com.saucelabs.mydemoapp.android:id/zipET";
     public static final String INPUT_COUNTRY = "ID:com.saucelabs.mydemoapp.android:id/countryET";
     public static final String TO_PAYMENT_BUTTON = "ACCESSIBILITY_ID:Saves user info for checkout";
-
 }

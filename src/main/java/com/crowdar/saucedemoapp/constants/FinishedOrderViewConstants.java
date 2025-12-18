@@ -5,5 +5,4 @@ public class FinishedOrderViewConstants {
     public static final String CHECKOUT_COMPLETE_MESSAGE = "ID:com.saucelabs.mydemoapp.android:id/completeTV";
     public static final String THANKS_MESSAGE = "ID:com.saucelabs.mydemoapp.android:id/thankYouTV";
     public static final String CONTINUE_SHOPPING_BUTTON = "ACCESSIBILITY_ID:Tap to open catalog";
-
 }

@@ -7,7 +7,7 @@ Feature: Full order workflow in the SauceDemo app
   Background:
     Given The SauceDemo app is loaded correctly
 
-  @MakeAnOrder
+  @MakeAnOrder @Smoke @Regression
   Scenario: The user completes an order successfully
     When The user selects the product "Sauce Labs Backpack (red)"
     And The user adds the product to the cart
@@ -19,7 +19,7 @@ Feature: Full order workflow in the SauceDemo app
     Then The user should see the order confirmation message
 
 
-  @MakeAnOrderOutline
+  @MakeAnOrderOutline @Regression
   Scenario Outline: The user finds a product, logs in, fills the forms and make an order
     When The user selects the product "<product>"
     And The user adds the product to the cart
@@ -39,7 +39,8 @@ Feature: Full order workflow in the SauceDemo app
       | Sauce Labs Bike Light        |
       | Sauce Labs Onesie            |
 
-  @MakeAnOrderAndRateATheProduct
+
+  @MakeAnOrderAndRateATheProduct @Regression
   Scenario Outline: The user makes an order and rates a product
     When The user makes a "<product>" order and continues shopping
     And The user selects the product "<product>"

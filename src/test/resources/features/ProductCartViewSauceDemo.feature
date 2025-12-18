@@ -7,20 +7,20 @@ Feature: Add and remove products in the SauceDemo app
   Background:
     Given The SauceDemo app is loaded correctly
 
-  @AddAProductToCart
+  @AddAProductToCart @Smoke @Regression
   Scenario: The user selects a product and adds it to the cart
     When The user selects the product "Sauce Labs Backpack (violet)"
     And The user adds the product to the cart
     Then The cart badge count should show 1
 
-  @AddAProductToCartTwice
+  @AddAProductToCartTwice @Regression
   Scenario: The user selects a product and adds two items of it to the cart
     When The user selects the product "Sauce Labs Backpack (red)"
     And The user clicks the + button
     And The user adds the product to the cart
     Then The cart badge count should show 2
 
-  @AddAndRemoveAnItem
+  @AddAndRemoveAnItem @Regression
   Scenario: The user selects a product, adds it to the cart and removes it
     When The user selects the product "Sauce Labs Backpack (orange)"
     And The user adds the product to the cart
@@ -28,14 +28,14 @@ Feature: Add and remove products in the SauceDemo app
     And The user removes the product from the cart
     Then The user should see a message indicating that there are no items in the cart
 
-  @IncreaseItemQuantity
+  @IncreaseItemQuantity @Regression
   Scenario: The user selects a product and adds N items of it to the cart
     When The user selects the product "Sauce Labs Backpack (yellow)"
     And The user adds the product to the cart
     And The user clicks the + button 3 times
     Then The cart badge count should show 4
 
-  @RatingAProduct
+  @RatingAProduct @Regression
   Scenario: The user selects a product and gives it N stars
     When The user selects the product "Sauce Labs Backpack (red)"
     And The user rates the product with 1 stars
