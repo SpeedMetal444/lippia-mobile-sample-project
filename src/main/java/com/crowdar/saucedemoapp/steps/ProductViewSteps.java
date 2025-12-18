@@ -1,6 +1,8 @@
 package com.crowdar.saucedemoapp.steps;
 
+import com.crowdar.saucedemoapp.services.HomeService;
 import com.crowdar.saucedemoapp.services.ProductViewService;
+import cucumber.api.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -47,5 +49,12 @@ public class ProductViewSteps {
     @Then("The user should see a thanks for rating message")
     public void theUserShouldSeeAThanksForRatingMessage() {
         ProductViewService.isRatingThanksMessageVisible();
+    }
+
+    @And("The user adds the product to the cart and comes back to the catalog")
+    public void theUserAddsTheProductToTheCartAndComesBackToTheCatalog() {
+        ProductViewService.clickAddToCart();
+        HomeService.clickMenu();
+        HomeService.clickCatalog();
     }
 }

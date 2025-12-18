@@ -22,4 +22,10 @@ public class HomeService {
     public static void clickProduct(String product) {
         MobileActionManager.click(HomeConstants.PRODUCT_BUTTON_BY_TITLE, product);
     }
+    public static void clickMenu(){
+        MobileActionManager.click(HomeConstants.MENU_BUTTON);
+    }
+    public static void clickCatalog(){
+        MobileActionManager.click(HomeConstants.CATALOG_BUTTON);
+    }
 }

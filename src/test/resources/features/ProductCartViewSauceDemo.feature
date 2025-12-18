@@ -20,6 +20,18 @@ Feature: Add and remove products in the SauceDemo app
     And The user adds the product to the cart
     Then The cart badge count should show 2
 
+  @AddTwoProductsToCart @Regression
+  Scenario Outline: The user selects two products and adds it to the cart
+    When The user selects the product "<product1>"
+    And The user adds the product to the cart and comes back to the catalog
+    And The user selects the product "<product2>"
+    And The user adds the product to the cart
+    Then The user should see the "<product1>" and "<product2>" in the cart view
+
+    Examples:
+      | product1                     | product2                     |
+      | Sauce Labs Backpack (orange) | Sauce Labs Backpack (violet) |
+
   @AddAndRemoveAnItem @Regression
   Scenario: The user selects a product, adds it to the cart and removes it
     When The user selects the product "Sauce Labs Backpack (orange)"

@@ -22,4 +22,9 @@ public class CartViewService {
     public static void clickProceedToCheckout() {
         MobileActionManager.click(CartViewConstants.CHECKOUT_BUTTON);
     }
+
+    public static void isItemDisplayed(String product) {
+        String locator = String.format(CartViewConstants.ITEM_TITLE, product);
+        MobileActionManager.isVisible(locator);
+    }
 }
