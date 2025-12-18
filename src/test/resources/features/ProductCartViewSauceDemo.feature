@@ -20,7 +20,7 @@ Feature: Add and remove products in the SauceDemo app
     And The user adds the product to the cart
     Then The cart badge count should show 2
 
-  @AddTwoProductsToCart @Regression
+  @AddTwoProductsToCart @Regression @TPFinal
   Scenario Outline: The user selects two products and adds it to the cart
     When The user selects the product "<product1>"
     And The user adds the product to the cart and comes back to the catalog
@@ -40,7 +40,7 @@ Feature: Add and remove products in the SauceDemo app
     And The user removes the product from the cart
     Then The user should see a message indicating that there are no items in the cart
 
-  @IncreaseItemQuantity @Regression
+  @IncreaseItemQuantity @Regression @TPFinal
   Scenario: The user selects a product and adds N items of it to the cart
     When The user selects the product "Sauce Labs Backpack (yellow)"
     And The user adds the product to the cart

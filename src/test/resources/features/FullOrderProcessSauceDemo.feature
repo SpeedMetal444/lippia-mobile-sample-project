@@ -40,7 +40,7 @@ Feature: Full order workflow in the SauceDemo app
       | Sauce Labs Onesie            |
 
 
-  @MakeAnOrderAndRateATheProduct @Regression
+  @MakeAnOrderAndRateATheProduct @Regression @TPFinal
   Scenario Outline: The user makes an order and rates a product
     When The user makes a "<product>" order and continues shopping
     And The user selects the product "<product>"
