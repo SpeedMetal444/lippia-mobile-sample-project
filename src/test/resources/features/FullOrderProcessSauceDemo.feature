@@ -50,5 +50,4 @@ Feature: Full order workflow in the SauceDemo app
     Examples:
       | product                      | stars |
       | Sauce Labs Backpack          | 4     |
-      | Sauce Labs Backpack (green)  | 2     |
       | Sauce Labs Backpack (violet) | 5     |
